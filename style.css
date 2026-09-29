@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080808;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #0d0d0d;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+    border-bottom: 2px solid #e00000;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+#inicio {
+    min-height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+#inicio h2 {
+    font-size: 64px;
+    color: #ffffff;
+}
+
+#inicio p {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #ff1a1a;
+}
+
+#vips {
+    min-height: 600px;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+#vips h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.vip-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.vip-card {
+    position: relative;
+    background: #111111;
+    width: 320px;
+    padding: 35px 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.vip-card:hover {
+    transform: translateY(-10px);
+}
+
+.vip-card h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.vip-card .preco {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.vip-card span {
+    color: #999999;
+}
+
+.vip-card ul {
+    list-style: none;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.vip-card li {
+    margin: 15px 0;
+    color: #dddddd;
+}
+
+.vip-card button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* VIP PRATA */
+
+.prata {
+    border: 2px solid #a8a8a8;
+}
+
+.prata h3,
+.prata .preco {
+    color: #d6d6d6;
+}
+
+.prata button {
+    background: #c0c0c0;
+    color: #111111;
+}
+
+/* VIP OURO */
+
+.ouro {
+    border: 2px solid #ffc400;
+    box-shadow: 0 0 25px rgba(255, 196, 0, 0.20);
+}
+
+.ouro h3,
+.ouro .preco {
+    color: #ffc400;
+}
+
+.ouro button {
+    background: #ffc400;
+    color: #111111;
+}
+
+/* VIP DIAMANTE */
+
+.diamante {
+    border: 2px solid #00d9ff;
+}
+
+.diamante h3,
+.diamante .preco {
+    color: #00d9ff;
+}
+
+.diamante button {
+    background: #00d9ff;
+    color: #111111;
+}
+
+/* MAIS POPULAR */
+
+.destaque {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #ffc400;
+    color: #111111;
+
+    padding: 7px 18px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* ===== INÍCIO VENATTO ===== */
+
+#inicio {
+    min-height: calc(100vh - 80px);
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at center, rgba(180, 0, 0, 0.20), transparent 50%),
+        linear-gradient(180deg, #080808 0%, #0d0000 55%, #080808 100%);
+}
+
+#inicio::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: #d00000;
+    filter: blur(200px);
+    opacity: 0.12;
+    border-radius: 50%;
+}
+
+.inicio-conteudo {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#inicio .bem-vindo {
+    color: #e00000;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+#inicio h2 {
+    font-size: 72px;
+    line-height: 1;
+    color: #ffffff;
+}
+
+#inicio h2 span {
+    color: #e00000;
+}
+
+#inicio .slogan {
+    margin-top: 20px;
+    font-size: 27px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#inicio .descricao {
+    max-width: 620px;
+    margin: 20px auto 0;
+    color: #aaaaaa;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.inicio-botoes {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.inicio-botoes a {
+    padding: 15px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-vip {
+    background: #d00000;
+    color: white;
+    border: 2px solid #d00000;
+}
+
+.btn-vip:hover {
+    background: #ff0000;
+    border-color: #ff0000;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
+}
+
+.btn-discord {
+    background: transparent;
+    color: white;
+    border: 2px solid #444444;
+}
+
+.btn-discord:hover {
+    border-color: #e00000;
+    color: #ff3333;
+    transform: translateY(-3px);
+}
+
+.logo-inicio {
+    width: 360px;
+    max-width: 85%;
+    height: auto;
+
+    display: block;
+    margin: 0 auto 20px;
+
+    filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.25));
+}
+
+/* ===== FUNDO DA HOME ===== */
+
+#inicio {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(20, 0, 0, 0.82)
+        ),
+        url("img/logo-venatto.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ===== SOBRE A VENATTO ===== */
+
+#sobre {
+    min-height: 650px;
+    padding: 100px 20px;
+    background:
+        radial-gradient(circle at center, rgba(180, 0, 0, 0.12), transparent 55%),
+        #080808;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-conteudo {
+    width: 100%;
+    max-width: 1050px;
+    text-align: center;
+}
+
+.sobre-tag {
+    color: #e00000;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+#sobre h2 {
+    font-size: 45px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+#sobre h2 span {
+    color: #e00000;
+}
+
+#sobre > .sobre-conteudo > p:not(.sobre-tag) {
+    max-width: 750px;
+    margin: 12px auto;
+    color: #aaaaaa;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.sobre-destaques {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.sobre-destaques div {
+    width: 270px;
+    padding: 30px 20px;
+
+    background: #101010;
+    border: 1px solid #292929;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.sobre-destaques div:hover {
+    transform: translateY(-7px);
+    border-color: #d00000;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.12);
+}
+
+.sobre-destaques strong {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sobre-destaques span {
+    color: #888888;
+    font-size: 14px;
+}
+
+/* ===== DISCORD VENATTO ===== */
+
+#discord {
+    min-height: 550px;
+    padding: 100px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(circle at center, rgba(224, 0, 0, 0.15), transparent 55%),
+        linear-gradient(180deg, #080808 0%, #110000 100%);
+
+    border-top: 1px solid #1f1f1f;
+}
+
+.discord-conteudo {
+    width: 100%;
+    max-width: 750px;
+}
+
+.discord-tag {
+    color: #e00000;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+#discord h2 {
+    color: #ffffff;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+#discord h2 span {
+    color: #e00000;
+}
+
+#discord p:not(.discord-tag) {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #aaaaaa;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.discord-botao {
+    display: inline-block;
+    margin-top: 35px;
+
+    padding: 16px 35px;
+
+    background: #d00000;
+    color: #ffffff;
+
+    border: 2px solid #d00000;
+    border-radius: 7px;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.discord-botao:hover {
+    background: #ff0000;
+    border-color: #ff0000;
+
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.35);
+}
+
+/* ===== BOTÃO COMPRAR VIP ===== */
+
+.btn-comprar-vip {
+    display: block;
+    width: 100%;
+    padding: 14px;
+
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.prata .btn-comprar-vip {
+    background: #c0c0c0;
+    color: #111111;
+}
+
+.prata .btn-comprar-vip:hover {
+    background: #e0e0e0;
+    transform: translateY(-3px);
+}
+
+/* BOTÃO VIP OURO */
+
+.ouro .btn-comprar-vip {
+    background: #ffc400;
+    color: #111111;
+}
+
+.ouro .btn-comprar-vip:hover {
+    background: #ffd633;
+    transform: translateY(-3px);
+}
+
+
+/* BOTÃO VIP DIAMANTE */
+
+.diamante .btn-comprar-vip {
+    background: #00d9ff;
+    color: #111111;
+}
+
+.diamante .btn-comprar-vip:hover {
+    background: #4be5ff;
+    transform: translateY(-3px);
+}
+
+/* ===== RESPONSIVO CELULAR ===== */
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    #inicio {
+        min-height: 750px;
+        background-attachment: scroll;
+    }
+
+    #inicio h2 {
+        font-size: 46px;
+    }
+
+    #inicio .slogan {
+        font-size: 22px;
+    }
+
+    #inicio .descricao {
+        font-size: 15px;
+    }
+
+    .inicio-botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio-botoes a {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #vips {
+        padding: 70px 20px;
+    }
+
+    #vips h2 {
+        font-size: 32px;
+    }
+
+    .vip-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    #sobre h2,
+    #discord h2 {
+        font-size: 34px;
+    }
+
+    .sobre-destaques div {
+        width: 100%;
+        max-width: 340px;
+    }
+}
