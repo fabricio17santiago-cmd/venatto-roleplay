@@ -627,3 +627,149 @@ nav a:hover {
         max-width: 340px;
     }
 }
+
+/* ===== PÁGINA VIP PRATA ===== */
+
+.pagina-vip {
+    min-height: 100vh;
+    padding: 140px 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.95)),
+        url("img/logo-venatto.png") center/cover no-repeat;
+}
+
+.vip-detalhes {
+    width: 100%;
+    max-width: 550px;
+    background: #111;
+    border: 1px solid #555;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+}
+
+.vip-detalhes.prata {
+    box-shadow: 0 0 30px rgba(200, 200, 200, 0.15);
+}
+
+.vip-detalhes h1 {
+    font-size: 38px;
+    color: #d4d4d4;
+    margin-bottom: 15px;
+}
+
+.preco-vip {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.duracao-vip {
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.vip-detalhes h2 {
+    color: #d4d4d4;
+    margin-bottom: 20px;
+}
+
+.vip-detalhes ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.vip-detalhes li {
+    padding: 10px 0;
+    border-bottom: 1px solid #222;
+    color: #ddd;
+}
+
+.comprar-discord {
+    display: block;
+    padding: 15px;
+    background: #d4d4d4;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.comprar-discord:hover {
+    background: #fff;
+    transform: translateY(-2px);
+}
+
+.voltar-vips {
+    display: inline-block;
+    margin-top: 25px;
+    color: #999;
+    text-decoration: none;
+}
+
+.voltar-vips:hover {
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .vip-detalhes {
+        padding: 30px 20px;
+    }
+
+    .vip-detalhes h1 {
+        font-size: 30px;
+    }
+
+    .preco-vip {
+        font-size: 30px;
+    }
+}
+
+/* ===== VIP OURO ===== */
+
+.vip-detalhes.ouro {
+    border-color: #d4af37;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.20);
+}
+
+.vip-detalhes.ouro h1,
+.vip-detalhes.ouro h2 {
+    color: #ffd700;
+}
+
+.vip-detalhes.ouro .comprar-discord {
+    background: #ffd700;
+    color: #111;
+}
+
+.vip-detalhes.ouro .comprar-discord:hover {
+    background: #ffe44d;
+}
+
+
+/* ===== VIP DIAMANTE ===== */
+
+.vip-detalhes.diamante {
+    border-color: #00d9ff;
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.20);
+}
+
+.vip-detalhes.diamante h1,
+.vip-detalhes.diamante h2 {
+    color: #00d9ff;
+}
+
+.vip-detalhes.diamante .comprar-discord {
+    background: #00d9ff;
+    color: #111;
+}
+
+.vip-detalhes.diamante .comprar-discord:hover {
+    background: #5ce8ff;
+}
