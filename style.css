@@ -773,3 +773,341 @@ nav a:hover {
 .vip-detalhes.diamante .comprar-discord:hover {
     background: #5ce8ff;
 }
+
+/* =========================================
+   CATÁLOGO DE VEÍCULOS - VENATTO ROLEPLAY
+========================================= */
+
+.pagina-veiculos {
+    min-height: 100vh;
+    padding: 130px 6% 80px;
+    background:
+        radial-gradient(circle at top, rgba(180, 0, 0, 0.18), transparent 40%),
+        #080808;
+    color: white;
+}
+
+/* TOPO */
+
+.veiculos-topo {
+    max-width: 900px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.veiculos-tag {
+    color: #ff2020;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.veiculos-topo h2 {
+    font-size: 46px;
+    margin: 0 0 15px;
+}
+
+.veiculos-topo h2 span {
+    color: #ff2020;
+}
+
+.veiculos-topo p {
+    color: #aaa;
+    font-size: 17px;
+}
+
+
+/* CATEGORIAS */
+
+.veiculos-categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 45px;
+}
+
+.categoria {
+    padding: 12px 18px;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    background: #111;
+    color: #bbb;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.categoria:hover {
+    border-color: #ff2020;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.categoria.ativa {
+    background: #d40000;
+    border-color: #ff3030;
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.25);
+}
+
+
+/* GRID DOS VEÍCULOS */
+
+.catalogo-veiculos {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.veiculo-card {
+    overflow: hidden;
+    border: 1px solid #222;
+    border-radius: 14px;
+    background: linear-gradient(
+        145deg,
+        #151515,
+        #0c0c0c
+    );
+
+    transition: 0.3s;
+}
+
+.veiculo-card:hover {
+    transform: translateY(-7px);
+    border-color: #8d0000;
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.6),
+        0 0 20px rgba(255, 0, 0, 0.12);
+}
+
+
+/* IMAGEM DO VEÍCULO */
+
+.veiculo-imagem {
+    height: 210px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(190, 0, 0, 0.25),
+            transparent 60%
+        ),
+        #090909;
+
+    border-bottom: 1px solid #222;
+}
+
+.veiculo-imagem span {
+    font-size: 85px;
+    filter: drop-shadow(
+        0 0 20px rgba(255, 0, 0, 0.35)
+    );
+}
+
+
+/* INFORMAÇÕES */
+
+.veiculo-info {
+    padding: 22px;
+}
+
+.veiculo-tipo {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    color: #ff3030;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.veiculo-info h3 {
+    margin: 0 0 10px;
+    font-size: 23px;
+}
+
+.veiculo-info p {
+    color: #999;
+    line-height: 1.6;
+    min-height: 50px;
+}
+
+
+/* PREÇO / LOCAL */
+
+.veiculo-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 20px;
+    padding-top: 16px;
+
+    border-top: 1px solid #252525;
+
+    color: #ddd;
+    font-size: 14px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+    .pagina-veiculos {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .veiculos-topo h2 {
+        font-size: 34px;
+    }
+
+    .veiculos-categorias {
+        justify-content: flex-start;
+    }
+
+    .categoria {
+        flex-grow: 1;
+    }
+
+}
+
+/* =========================
+   RODAPÉ - VENATTO
+========================= */
+
+footer {
+    background: #080808;
+    border-top: 1px solid #222;
+    padding: 50px 20px 25px;
+    text-align: center;
+}
+
+.footer-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-conteudo h2 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.footer-conteudo h2 span {
+    color: #ffbb00;
+}
+
+.footer-conteudo > p {
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffbb00;
+}
+
+.footer-conteudo .copyright {
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* LOGO DO MENU */
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+header nav a {
+    position: relative;
+    padding-bottom: 6px;
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #e00000;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   RESPONSIVO - CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px 10px;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    header nav a {
+        font-size: 13px;
+        padding: 5px;
+    }
+
+}

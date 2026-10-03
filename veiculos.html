@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Veículos | VENATTO ROLEPLAY</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+    <img src="img/logo-venatto.png" alt="VENATTO ROLEPLAY">
+</a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="veiculos.html">Veículos</a>
+            <a href="index.html#vips">VIPs</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="index.html#discord">Discord</a>
+        </nav>
+    </header>
+
+
+    <main class="pagina-veiculos">
+
+        <section class="veiculos-topo">
+
+            <p class="veiculos-tag">GARAGEM VENATTO</p>
+
+            <h2>CATÁLOGO DE <span>VEÍCULOS</span></h2>
+
+            <p>
+                Conheça alguns dos veículos disponíveis na
+                VENATTO ROLEPLAY.
+            </p>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+
+        <div class="veiculos-categorias">
+
+            <button class="categoria ativa" data-categoria="todos">
+                TODOS
+            </button>
+
+            <button class="categoria" data-categoria="motos">
+                🏍️ MOTOS
+            </button>
+
+            <button class="categoria" data-categoria="carros">
+                🚗 CARROS
+            </button>
+
+            <button class="categoria" data-categoria="caminhoes">
+                🚚 CAMINHÕES
+            </button>
+
+            <button class="categoria" data-categoria="blindados">
+                🛡️ BLINDADOS
+            </button>
+
+            <button class="categoria" data-categoria="helicopteros">
+                🚁 HELICÓPTEROS
+            </button>
+
+        </div>
+
+
+        <!-- CATÁLOGO -->
+
+        <section class="catalogo-veiculos">
+
+
+            <!-- MOTO -->
+
+            <div class="veiculo-card" data-categoria="motos">
+
+                <div class="veiculo-imagem">
+                    <span>🏍️</span>
+                </div>
+
+                <div class="veiculo-info">
+
+                    <span class="veiculo-tipo">
+                        MOTO
+                    </span>
+
+                    <h3>Moto Esportiva</h3>
+
+                    <p>
+                        Veículo disponível na VENATTO.
+                    </p>
+
+                    <div class="veiculo-detalhes">
+
+                        <span>💰 Preço: EM BREVE</span>
+
+                        <span>
+                            📍 Concessionária
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARRO -->
+
+            <div class="veiculo-card" data-categoria="carros">
+
+                <div class="veiculo-imagem">
+                    <span>🚗</span>
+                </div>
+
+                <div class="veiculo-info">
+
+                    <span class="veiculo-tipo">
+                        CARRO
+                    </span>
+
+                    <h3>Carro Esportivo</h3>
+
+                    <p>
+                        Veículo disponível na VENATTO.
+                    </p>
+
+                    <div class="veiculo-detalhes">
+
+                        <span>💰 Preço: EM BREVE</span>
+
+                        <span>
+                            📍 Concessionária
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAMINHÃO -->
+
+            <div class="veiculo-card" data-categoria="caminhoes">
+
+                <div class="veiculo-imagem">
+                    <span>🚚</span>
+                </div>
+
+                <div class="veiculo-info">
+
+                    <span class="veiculo-tipo">
+                        CAMINHÃO
+                    </span>
+
+                    <h3>Caminhão Baú</h3>
+
+                    <p>
+                        Veículo para transporte e trabalho.
+                    </p>
+
+                    <div class="veiculo-detalhes">
+
+                        <span>💰 Preço: EM BREVE</span>
+
+                        <span>
+                            📦 Transporte
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BLINDADO -->
+
+            <div class="veiculo-card" data-categoria="blindados">
+
+                <div class="veiculo-imagem">
+                    <span>🛡️</span>
+                </div>
+
+                <div class="veiculo-info">
+
+                    <span class="veiculo-tipo">
+                        BLINDADO
+                    </span>
+
+                    <h3>Veículo Blindado</h3>
+
+                    <p>
+                        Categoria especial da VENATTO.
+                    </p>
+
+                    <div class="veiculo-detalhes">
+
+                        <span>💰 Preço: EM BREVE</span>
+
+                        <span>
+                            🔒 Categoria especial
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HELICÓPTERO -->
+
+            <div class="veiculo-card" data-categoria="helicopteros">
+
+                <div class="veiculo-imagem">
+                    <span>🚁</span>
+                </div>
+
+                <div class="veiculo-info">
+
+                    <span class="veiculo-tipo">
+                        HELICÓPTERO
+                    </span>
+
+                    <h3>Helicóptero Executivo</h3>
+
+                    <p>
+                        Transporte aéreo da VENATTO.
+                    </p>
+
+                    <div class="veiculo-detalhes">
+
+                        <span>💰 Preço: EM BREVE</span>
+
+                        <span>
+                            💎 Categoria especial
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        const botoes =
+            document.querySelectorAll('.categoria');
+
+        const veiculos =
+            document.querySelectorAll('.veiculo-card');
+
+
+        botoes.forEach(botao => {
+
+            botao.addEventListener('click', () => {
+
+                botoes.forEach(b => {
+                    b.classList.remove('ativa');
+                });
+
+                botao.classList.add('ativa');
+
+                const categoria =
+                    botao.dataset.categoria;
+
+
+                veiculos.forEach(veiculo => {
+
+                    if (
+                        categoria === 'todos' ||
+                        veiculo.dataset.categoria === categoria
+                    ) {
+
+                        veiculo.style.display = 'block';
+
+                    } else {
+
+                        veiculo.style.display = 'none';
+
+                    }
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
